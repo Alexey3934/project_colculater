@@ -96,3 +96,42 @@ inputElK.addEventListener('keydown', function(press) {
         this.value = ''
     }                   
 })
+
+
+
+let secondResultL = 0
+let secondResultK = 0
+
+const buttonL = document.getElementById('buttonL')
+buttonL.addEventListener('click', function() {
+    const firstResultPitL = +sumPitL.textContent / 3
+    const firstResultObshL = +sumObshL.textContent / 2
+    const skidkaElL = +sumElL.textContent / 2 - (+sumElL.textContent / 2 / 100 * 13)
+    const firstResultElL = (+sumElL.textContent - skidkaElL) / 2
+
+    secondResultL = firstResultPitL + firstResultObshL + firstResultElL
+    const pResultL = document.getElementById('secondResultL')
+    pResultL.textContent = `Катя должна Лёше" \n ${Math.round(secondResultL)}`
+    
+}) 
+
+const buttonK = document.getElementById('buttonK')
+buttonK.addEventListener('click', function() {
+    const firstResultPitK = +sumPitK.textContent / 3 * 2
+    const firstResultObshK = +sumObshK.textContent / 2
+   
+    const skidkaElK = +sumElK.textContent / 2 - (+sumElK.textContent / 2 / 100 * 13)
+    const firstResultElK = +sumElK.textContent - (+sumElK.textContent - skidkaElK) / 2
+
+    secondResultK = firstResultPitK + firstResultObshK + firstResultElK
+    const pResultK = document.getElementById('secondResultK')
+    pResultK.textContent = `Лёша должен Кате \n ${Math.round(secondResultK)}`
+    
+}) 
+
+const finish = document.getElementById('finish')
+finish.addEventListener('click', () => {
+    const lToK = `Лёша должен Кати ${Math.round(secondResultK - secondResultL)}`
+    const kToL = `Катя должна Лёше ${Math.round(secondResultL - secondResultK)}`
+    alert((secondResultK > secondResultL)? lToK : kToL)
+})

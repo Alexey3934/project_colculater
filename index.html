@@ -14,76 +14,89 @@
 аргументами для этой кнопки
     общее: единый колбэк, котоый добавляет Р и считает сумму -->
 
-<html>
-    <head>
-
-    <link rel="stylesheet" href="index.css">        
-
-    </head>
+    <html>
+        <head>
+    
+        <link rel="stylesheet" href="index.css">        
+    
+        </head>
+        
+        
+        <body>
+            <div class='flex-container'>
+               
+                <div class='main Lesha'>
+                    <h1>Лёша</h1>
+                    <div class="flex-container">
+                    <table>
+                        <tr>
+                            <td>пит</td>
+                            <td>общ</td>
+                            <td>эл-во</td>
+                        </tr>
+                        <tr>
+                            <td><input type="text" id="inputPitL" maxlength="4"></td>
+                            <td><input type="text" id="inputObshL" maxlength="4"></td>
+                            <td><input type="text" id="inputElL" maxlength="4"></td>
+                        </tr>
+                        
+                        <tr class="red">
+                            <td><div id="sumPitL"></div></td>
+                            <td><div id="sumObshL"></div></td>
+                            <td><div id="sumElL"></div></td>
+                        </tr>
+                        <tr class="align">
+                            <td><div id="listPitL"></div></td>
+                            <td><div id="listObshL"></div></td>
+                            <td><div id="listElL"></div></td>
+                        </tr>
+                    </table>
+                    
+                    <div>
+                    <button id="buttonL">промежуточный подсчёт</button>
+                    <p id="secondResultL"></p>
+                    </div>
+                </div>
+                </div>
+             
+                <button id="finish">итого</button>
+    
+                <div class='main Katia'>
+                    <h1>Катя</h1>
+                    <div class="flex-container">
+                        <table>
+                             <tr>
+                                <td>пит</td>
+                                <td>общ</td>
+                                <td>эл-во</td>
+                             </tr>
+                             <tr>
+                                 <td><input type="text" id="inputPitK" maxlength="4"></td>
+                                 <td><input type="text" id="inputObshK" maxlength="4"></td>
+                                  <td><input type="text" id="inputElK" maxlength="4"></td>
+                             </tr>
+                        
+                             <tr class="red">
+                                 <td><div id="sumPitK"></div></td>
+                                 <td><div id="sumObshK"></div></td>
+                                    <td><div id="sumElK"></div></td>
+                             </tr>
+                              <tr class="align">
+                                   <td><div id="listPitK"></div></td>
+                                  <td><div id="listObshK"></div></td>
+                                  <td><div id="listElK"></div></td>
+                              </tr>
+                         </table>
+                         <div>
+                            <button id="buttonK">промежуточный подсчёт</button>
+                            <p id="secondResultK"></p>
+                         </div> 
+                    </div>
+                </div>
+            </div>
     
     
-    <body>
-        <div class='flex-container'>
-           
-            <div class='main Lesha'>
-                <h1>1</h1>
-                
-                <table>
-                    <tr>
-                        <td>пит</td>
-                        <td>общ</td>
-                        <td>эл-во</td>
-                    </tr>
-                    <tr>
-                        <td><input type="text" id="inputPitL" maxlength="4"></td>
-                        <td><input type="text" id="inputObshL" maxlength="4"></td>
-                        <td><input type="text" id="inputElL" maxlength="4"></td>
-                    </tr>
-                    
-                    <tr class="red">
-                        <td><div id="sumPitL"></div></td>
-                        <td><div id="sumObshL"></div></td>
-                        <td><div id="sumElL"></div></td>
-                    </tr>
-                    <tr class="align">
-                        <td><div id="listPitL"></div></td>
-                        <td><div id="listObshL"></div></td>
-                        <td><div id="listElL"></div></td>
-                    </tr>
-                </table>
-            </div>
-         
-            <div class='main Katia'>
-                <h1>2</h1>
-                
-                <table>
-                    <tr>
-                        <td>пит</td>
-                        <td>общ</td>
-                        <td>эл-во</td>
-                    </tr>
-                    <tr>
-                        <td><input type="text" id="inputPitK" maxlength="4"></td>
-                        <td><input type="text" id="inputObshK" maxlength="4"></td>
-                        <td><input type="text" id="inputElK" maxlength="4"></td>
-                    </tr>
-                    
-                    <tr class="red">
-                        <td><div id="sumPitK"></div></td>
-                        <td><div id="sumObshK"></div></td>
-                        <td><div id="sumElK"></div></td>
-                    </tr>
-                    <tr class="align">
-                        <td><div id="listPitK"></div></td>
-                        <td><div id="listObshK"></div></td>
-                        <td><div id="listElK"></div></td>
-                    </tr>
-                </table>
-            </div>
-        </div>
-
-
-   <script src="index.js"></script>
-   
-</body>
-</html>
+       <script src="index.js"></script>
+       
+    </body>
+    </html>
